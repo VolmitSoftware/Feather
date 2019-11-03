@@ -1,0 +1,246 @@
+{
+    "game": {
+        "forgeVersion": "14.23.5.2838",
+        "minecraftVersion": "1.12.2"
+    },
+    "identity": {
+        "name": "Feather",
+        "description": "'Fast'",
+        "version": "1.4"
+    },
+    "profiles": [
+        {
+            "name": "ultra",
+            "launchArgs": [
+                "-Xmx4g",
+                "-Xms1g",
+                "-XX:+UseG1GC",
+                "-XX:+UnlockExperimentalVMOptions",
+                "-XX:MaxGCPauseMillis=12",
+                "-XX:+DisableExplicitGC",
+                "-XX:+ParallelRefProcEnabled",
+                "-XX:ParallelGCThreads=16",
+                "-XX:ConcGCThreads=6",
+                "-XX:G1HeapWastePercent=15"
+            ],
+            "activation": [
+                "free_system_memory >= 8000",
+                "cpu_threads >= 8"
+            ]
+        },
+        {
+            "name": "default",
+            "launchArgs": [
+                "-Xmx2g",
+                "-Xms500m",
+                "-XX:+UseG1GC",
+                "-XX:+UnlockExperimentalVMOptions",
+                "-XX:MaxGCPauseMillis=14",
+                "-XX:+DisableExplicitGC",
+                "-XX:+ParallelRefProcEnabled",
+                "-XX:ParallelGCThreads=8",
+                "-XX:ConcGCThreads=5",
+                "-XX:G1HeapWastePercent=15"
+            ],
+            "activation": [
+                "free_system_memory >= 4000",
+                "cpu_threads >= 4"
+            ]
+        },
+        {
+            "name": "potato",
+            "launchArgs": [
+                "-Xmx1g",
+                "-Xms1m",
+                "-XX:+UseG1GC",
+                "-XX:+UnlockExperimentalVMOptions",
+                "-XX:MaxGCPauseMillis=16",
+                "-XX:+DisableExplicitGC",
+                "-XX:+ParallelRefProcEnabled",
+                "-XX:ParallelGCThreads=6",
+                "-XX:ConcGCThreads=4",
+                "-XX:G1HeapWastePercent=13"
+            ]
+        }
+    ],
+    "install": [
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/OreLib-1.12.2-3.6.0.1.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/ProportionalDestructionParticles-1.12.2-1.2.4%20(2).jar",
+            "location": "mods",
+            "type": "jar",
+            "activation": "ultra"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/OpenEye-1.12.2-0.8.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/Forgelin-1.8.4%20(1).jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/FancyBlockParticles-1.12.x-2.4.1%20(2).jar",
+            "location": "mods",
+            "type": "jar",
+            "activation": "ultra"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/DynamicSurroundings-1.12.2-3.6.0.1.jar",
+            "location": "mods",
+            "type": "jar",
+            "activation": "normal|ultra"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/BetterFoliage-MC1.12-2.2.0%20(1).jar",
+            "location": "mods",
+            "type": "jar",
+            "activation": "ultra"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/BetterFps-1.4.8.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/CMDCam_v1.4.2_mc1.12.2.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/Controlling-3.0.6.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/CreativeCore_v1.9.39_mc1.12.2.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/FpsReducer-mc1.12.2-1.10.3.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/MouseTweaks-2.10-mc1.12.2.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/SmoothFont-mc1.12.2-1.16.2.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/TexFix%2BV-1.12-4.0.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/VanillaFix-1.0.10-99.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/mods/foamfix-0.10.3-1.12.2.jar",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://raw.githubusercontent.com/cyberpwnn/Feather/master/.minecraft/options.txt",
+            "location": "/",
+            "type": "txt",
+            "name": "options"
+        },
+        {
+            "download": "https://optifine.net/adloadx?f=OptiFine_1.12.2_HD_U_E3.jar",
+            "hint": "optifine",
+            "location": "mods",
+            "type": "jar"
+        },
+        {
+            "download": "https://raw.githubusercontent.com/cyberpwnn/Feather/master/.minecraft/optionsof.txt",
+            "location": "/",
+            "type": "txt",
+            "name": "optionsof"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/config/vanillafix.cfg",
+            "location": "config",
+            "type": "cfg",
+            "name": "vanillafix"
+        },
+        {
+            "download": "https://raw.githubusercontent.com/cyberpwnn/Feather/master/.minecraft/config/splash.properties",
+            "location": "config",
+            "type": "properties",
+            "name": "splash"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/config/forgeChunkLoading.cfg",
+            "location": "config",
+            "type": "cfg",
+            "name": "forgeChunkLoading"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/config/forge.cfg",
+            "location": "config",
+            "type": "cfg",
+            "name": "forge"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/config/foamfix.cfg",
+            "location": "config",
+            "type": "cfg",
+            "name": "foamfix"
+        },
+        {
+            "download": "https://github.com/cyberpwnn/Feather/raw/master/.minecraft/config/betterfps.json",
+            "location": "config",
+            "type": "cfg",
+            "name": "betterfps"
+        },
+        {
+            "download": "https://raw.githubusercontent.com/cyberpwnn/Feather/master/.minecraft/config/smoothfont/smoothfont.cfg",
+            "location": "config/smoothfont",
+            "type": "cfg",
+            "name": "smoothfont"
+        },
+        {
+            "download": "https://raw.githubusercontent.com/cyberpwnn/Feather/master/.minecraft/config/fpsreducer/fpsreducer.cfg",
+            "location": "config/fpsreducer",
+            "type": "cfg",
+            "name": "fpsreducer"
+        }
+    ],
+    "tweaks": [
+        {
+            "file": "config/betterfoliage.cfg",
+            "find": "    B:dense=",
+            "replace": "    B:dense=true",
+            "activation": "ultra",
+            "addIfMissing": false
+        },
+        {
+            "file": "config/betterfoliage.cfg",
+            "find": "    D:heightMax=",
+            "replace": "    D:heightMax=1.5",
+            "activation": "ultra",
+            "addIfMissing": false
+        },
+        {
+            "file": "config/betterfoliage.cfg",
+            "find": "    D:heightMin=",
+            "replace": "    D:heightMin=0.8",
+            "activation": "ultra",
+            "addIfMissing": false
+        }
+    ]
+}
